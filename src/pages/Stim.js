@@ -1,17 +1,17 @@
 import React from 'react'
 import '../default.css'
 
-function TableTitle() {
+function StimTitle() {
     return (
         <div>
-             <h1 align="center" className="title">Casual Staring Stimulation (Table)</h1>
+             <h1 align="center" className="title">Casual Stare (Stim)</h1>
         </div>
     );
 }
 
-function TableBody() {
+function StimBody() {
     return (
-        <div id="Table Content">
+        <div id="Stim Content">
 		<table className="center">
 			<tr>
 				<th>Name</th>
@@ -88,6 +88,6 @@ function TableBody() {
 }
 
 export {
-    TableTitle, 
-    TableBody,
+    StimTitle, 
+    StimBody,
 }

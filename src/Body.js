@@ -3,8 +3,7 @@ import {HomeBody, HomeTitle} from './pages/Home';
 import {TextBody, TextTitle} from './pages/Text';
 import {ImageBody, ImageTitle} from './pages/Image';
 import {VideoBody, VideoTitle} from './pages/Video';
-import {TableBody, TableTitle} from './pages/Table';
-import {EmailBody, EmailTitle} from './pages/Email';
+import {StimBody, StimTitle} from './pages/Stim';
 import './default.css';
 
 class Body extends Component {
@@ -19,9 +18,7 @@ class Body extends Component {
             } else if (active_tab === 3) {
                 return <VideoBody/>
             } else if (active_tab === 4) {
-                return <TableBody/>
-            } else if (active_tab === 5) {
-                return <EmailBody/>
+                return <StimBody/>
             } else  {
                 return <HomeBody/>
             } 
@@ -43,9 +40,7 @@ class BodyTitle extends Component {
             } else if (active_tab === 3) {
                 return <VideoTitle/>
             } else if (active_tab === 4) {
-                return <TableTitle/>
-            } else if (active_tab === 5) {
-                return <EmailTitle/>
+                return <StimTitle/>
             } else  {
                 return <HomeTitle/>
             } 

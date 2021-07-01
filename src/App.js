@@ -59,7 +59,7 @@ function App() {
 	const [active, set_active] = useState(0)
 	const tabs = [
 		{id: 0, title: 'Home'}, {id: 1, title: 'Text'}, {id: 2, title: 'Image'},
-		{id: 3, title: 'Video'}, {id: 4, title: 'Table'}, {id: 5, title: 'Email'}
+		{id: 3, title: 'Video'}, {id: 4, title: 'Stim'},
 	]
 
 	const change_tab =(id) => {

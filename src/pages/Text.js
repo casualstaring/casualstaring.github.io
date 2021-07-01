@@ -6,7 +6,7 @@ import '../default.css'
 function TextTitle() {
     return (
         <div>
-             <h1 align="center" className="title">Text-Based Data</h1>
+             <h1 align="center" className="title">Casual Stare (Text)</h1>
         </div>
     );
 }
@@ -16,14 +16,6 @@ function TextBody() {
     return (
       <div style={{paddingLeft: "10px"}}>
        	<div id="content"> 
-		<h2>The Genesis of Text Based Interaction</h2>
-		<label htmlFor="fname1">Tag the front of a wall:</label><br/>
-		<input type="text" id="fname1" name="fname1" /><br/><br/>
-		<label htmlFor="fname1">Tag the back of a wall:</label><br/>
-		<input type="text" id="fname1" name="fname1" /><br/><br/>
-		How do you think? <br/>
-		<RadioButton/>
-		
 
 		<h2>To Do Lists</h2>
 		<h3>* Monday 21122020 [%] - A day hike in SB with michael and marisa</h3>

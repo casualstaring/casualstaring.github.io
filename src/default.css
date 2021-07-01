@@ -272,7 +272,7 @@ background-color: rgba(35, 49, 36, 0.171);
     height: 100%;
 }
 
-/* BEGIN Table Styling */
+/* BEGIN Stim Styling */
 table, th, td 
 {
     border: 1px solid black;
@@ -328,7 +328,7 @@ table
     }
 
 }
-/* END Table Styling */
+/* END Stim Styling */
 
  
 #content {
