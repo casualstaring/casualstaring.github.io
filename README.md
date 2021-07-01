@@ -9,3 +9,7 @@
     - this opens the app at [http://localhost:3000](http://localhost:3000) in the browser.
 - Deploy website to the web: `npm run deploy`
     - This will deploy the website to [https://casualstaring.github.io/](https://casualstaring.github.io/).
+
+
+## TODOs
+- Event and goals section
