@@ -1,5 +1,7 @@
 # React Notes
+## Notes on Compressing
+`sips --resampleHeight 600 *.jpg`
 
-- start server: 'npm run build' | 'npm run' 
-- npm start
-- npm install -g gh-pages --save-dev
+## Lazy Loading Embedded Video
+https://css-tricks.com/lazy-load-embedded-youtube-videos/
+https://codepen.io/jelle619/pen/yLBVyWY
