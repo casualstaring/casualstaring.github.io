@@ -1,0 +1,343 @@
+body 
+{
+    background: #64305d50;  /*  url("../assets/snake-sketch.jpg") no-repeat scroll 0cm 2cm; */
+}
+
+h1.title
+{
+    color: #253626;
+
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    font-variant: normal; /* normal / small-caps */
+    font-weight: 300;
+    font-size: xx-large; /* % or em makes font zoomable -- 'pt' and 'px' makes it absolute */
+    letter-spacing: 12px;
+
+    /* font-style: italic; */
+
+}
+
+
+h2.title
+{
+    color: #253626;
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    font-variant: normal; /* normal / small-caps */
+}
+
+img.title_img
+{
+    max-width: 100%;
+    display:block;
+    cursor:default;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+
+img.zoom
+{
+    /* display:inline-block;
+    text-align: center; */
+    height: 96%;
+    position:fixed;
+    margin:auto;
+    transform: translate(-50%, 0%);
+    padding-top: 2%;
+    cursor:default;
+    bottom: 2%;
+}
+@media only screen and (max-device-width: 480px) {
+    img.zoom
+    {
+        height: 100%;
+    }
+}
+
+iframe.thumb {
+    display:inline-block;
+   text-align: center;
+   height: 85%;
+   width: 85%;
+   position:fixed;
+   margin:auto;
+   transform: translate(-50%, 0%);
+   padding-top: 3.5%;
+   cursor:pointer;
+   
+   /* bottom: 2%; */
+}
+
+
+.modal {
+    text-align: center;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;  
+    display: none;
+    position: fixed;
+    background-color:rgba(0,0,0,0.45);
+    margin:auto;
+    z-index:5;
+}
+
+
+.content-line{ /* New line of photos */
+    text-align: center;
+}
+.content-atom{ /* Each photo on new line */
+    display: inline-block;
+    /* margin: 5px 5px; */
+    padding: 5px;
+    position: relative;
+}
+
+.content-iframe{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    display:inline-block; 
+    width : 320px; 
+    height: 240px; 
+    z-index:3;
+    cursor: pointer;
+}
+
+/* use span to group one liners and div to group multiliners */
+span.small
+{
+    font-size: x-small;
+    letter-spacing: 1px;
+
+}
+span.mistake
+{
+    text-decoration: line-through;
+    letter-spacing: 6px;
+}
+span.tweek
+{
+    letter-spacing: 1px;
+}
+
+span.emphasis
+{
+    letter-spacing: 24px;
+    font-weight: 300;
+}
+
+
+/* Cannot have two elements with the same id in one document. */
+#c1-2
+{
+    color: hotpink;
+}
+
+#no_margins
+{
+    margin: 0px 0px 0px 0px;
+}
+
+p
+{
+    color: #1a251b;
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    /* text-indent: 30px; */
+    text-align: center; /* right | center | justify */
+    /* font-size: x-large; */
+    padding: 20px 80px 20px 80px;
+}
+
+p.cover
+{
+    color: #1a251b;
+
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    /* text-indent: 30px; */
+    text-align: center; /* right | center | justify */
+    /* font-size: x-large; */
+    padding: 15px 80px 20px 80px;
+    margin-top: -30px;
+    margin-bottom: -25px;
+    /* display: inline */
+}
+
+p.list
+{
+    color: #1a251b;
+
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    text-align: justify; /* right | center | justify */
+    /* font-size: x-large; */
+    padding: 0px 80px 0px 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    p
+    {
+        color: #1a251b;
+        /* text-indent: 30px; */
+        text-align: center; /* right | center | justify */
+        /* font-size: xx-large; */
+        padding: 20px 50px 20px 50px;
+    }
+
+    p.list {
+        color: #1a251b;
+        text-align: justify; /* right | center | justify */
+        /* font-size: x-large; */
+        padding: 0px 20px 0px 20px;
+    }
+} 
+
+.input
+{
+    background-color: rgba(255, 255, 255, 0.692);
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+figcaption
+{
+    font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif; 
+    font-size: 15px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 500; 
+    line-height: 20px;
+}
+
+
+#to_top_btn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 10; 
+    border: none; 
+    background-color:rgba(64, 92, 61, 0.884); 
+    color: #f0f0e8; 
+    cursor: pointer; 
+    padding: 10px; 
+    /* border-radius: 10px;  */
+    font-size: 15px; 
+  }
+  
+#to_top_btn:hover {
+    background-color: rgba(35, 49, 36, 0.171);
+}
+
+.button 
+{
+    display: inline-block;
+    margin: 0px 1px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-top: 1px;
+    width: 15%;
+}
+
+  /* Change background color of buttons on hover */
+.button:hover 
+{
+background-color: rgba(35, 49, 36, 0.171);
+}
+
+.button a
+{
+    color: #1a251b;
+    text-align: center; 
+    font-size: 13px;
+    font-family: Times, Georgia,'Times New Roman', serif;
+    color:inherit;
+    text-decoration:none;
+    display: block;     
+    width: 100%;
+    height: 100%;
+}
+
+/* BEGIN Table Styling */
+table, th, td 
+{
+    border: 1px solid black;
+}
+
+th, td 
+{
+    color: #1a251b;
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    padding: 10px;
+}
+
+th
+{
+    color: #253626;
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+}
+
+td
+{
+    color: #1a251b;
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+}
+  
+table 
+{
+    border-collapse: collapse;
+    width: 75%;
+}
+.center 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-device-width: 480px) 
+{
+    table 
+    {
+        border-collapse: collapse;
+        width: 100%; 
+        border: 0;
+        table-layout:fixed;
+    }
+    th, td 
+    {
+        padding: 2px;
+    }
+    td { 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        word-wrap: break-word;
+    }
+
+}
+/* END Table Styling */
+
+ 
+#content {
+    padding-bottom:60px; /* Height of the footer element */
+}
+
+#footer {
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height:30px;   /* Height of the footer */
+}
