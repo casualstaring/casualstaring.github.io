@@ -1,18 +1,36 @@
-import React from 'react'
-import '../default.css'
+<!DOCTYPE html>
+<html>
 
-function StimTitle() {
-    return (
-        <div>
-             <h1 align="center" className="title">Casual Stare (Stim)</h1>
-        </div>
-    );
-}
+<head>
 
-function StimBody() {
-    return (
-        <div id="Stim Content">
-		<table className="center">
+	<title>
+		cs185 page
+	</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../style/default.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+	<button onclick="topFunction()" id="to_top_btn">Top</button>
+
+	<h1 align="center" class="title">Casual Stare (Stim)</h1>
+	<div class="content-line">
+		<div id="home-tab" class="button" style="width: 20%;"><a href="../index.html">Home</a></div>
+    </div>
+    <div class="content-line">
+        <div id="text-tab" class="button"><a href="text.html">Text</a></div>
+        <div id="image-tab" class="button"><a href="image.html">Image</a></div>
+        <div id="video-tab" class="button"><a href="video.html">Video</a></div>
+        <div id="stim-tab" class="button"><a href="stim.html">Stim</a></div>
+        
+    </div>
+	<script src="../scripts/tab_highlights.js"></script>
+
+	<div id="content">
+		<table class="center">
 			<tr>
 				<th>Name</th>
 				<th>Details</th>
@@ -82,12 +100,9 @@ function StimBody() {
 					"thinly slice those" -- siturc doars
 				</td>
 			</tr>
-		</table>        
-        </div>
-    );
-}
+		</table>
+	</div>
 
-export {
-    StimTitle, 
-    StimBody,
-}
+	<script src="../scripts/back_to_top.js"></script>
+</body>
+</html>
